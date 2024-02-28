@@ -1,0 +1,20 @@
+<!-- GET /albums -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>Album</title>
+    <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Album: {{album.title}}</h1>
+        <br>
+        <p>Released: {{album.release_year}}</p>
+        <p>Artist: {{artist.name}}</p>
+        <br>
+        <form action="/albums/{{album.id}}/delete" method="POST">
+        <input type = "submit" value = "Delete album">
+        <br>
+        <br>
+        <a href="/albums">Back to Album index</a>
+    </body>
+</html> 
